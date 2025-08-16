@@ -4,26 +4,26 @@ This repository contains the Pokémon gallery web application deployed via AWS S
 
 ---
 
-## 📸 Config Syncs in Doppler
+## Config Syncs in Doppler
 ![Config Syncs Screenshot](docs/ConfigSyncs.png)
 
 ---
 
-## 📸 Doppler Variables
+## Doppler Variables
 ![Doppler Variables Screenshot](docs/DopplerVariables.png)
 
 ---
 
-## 📸 GitHub Secrets
+## GitHub Secrets
 ![GitHub Secrets Screenshot](docs/GitHubSecrets.png)
 
 ---
 
-## 📸 Pokémon Gallery Application
+## Pokémon Gallery Application
 ![Pokémon Gallery Screenshot](docs/PokeGalleryApp.png)
 
 ---
 
-## 🌍 CDN URL
-[Access the deployed app](dps5xvynsmp8g.cloudfront.net)
+## CDN URL
+[dps5xvynsmp8g.cloudfront.net](https://dps5xvynsmp8g.cloudfront.net)
 ---
