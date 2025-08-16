@@ -20,11 +20,9 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: poke-gallery
 
       - name: Build project
         run: npm run build
-        working-directory: poke-gallery
 
       - name: Sync dist folder to S3 bucket
         env:
@@ -34,7 +32,6 @@ jobs:
           S3_BUCKET: ${{ secrets.S3_BUCKET }}
         run: |
           aws s3 sync dist/ s3://$S3_BUCKET --delete
-        working-directory: poke-gallery
 
       - name: Invalidate CloudFront cache
         env:
