@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -28,7 +26,6 @@ function App() {
     <div className="pokemon-grid">
       {pokemons.map((p) => (
         <div key={p.id} className="pokemon-card">
-          {/* Todo el contenido dentro del recuadro redondeado */}
           <img
             src={p.sprites.other["official-artwork"].front_default}
             alt={p.name}
