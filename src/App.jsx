@@ -23,17 +23,23 @@ function App() {
   }, []);
 
   return (
-    <div className="pokemon-grid">
-      {pokemons.map((p) => (
-        <div key={p.id} className="pokemon-card">
-          <img
-            src={p.sprites.other["official-artwork"].front_default}
-            alt={p.name}
-          />
-          <h2>{p.name}</h2>
-          <p>Tipo: {p.types.map((t) => t.type.name).join(", ")}</p>
-        </div>
-      ))}
+    <div>
+      <header className="app-header">
+        <img src={pokeball} alt="Pokébola" className="pokeball-icon" />
+        <h1 className="app-title">Poke Gallery</h1>
+      </header>
+      <div className="pokemon-grid">
+        {pokemons.map((p) => (
+          <div key={p.id} className="pokemon-card">
+            <img
+              src={p.sprites.other["official-artwork"].front_default}
+              alt={p.name}
+            />
+            <h2>{p.name}</h2>
+            <p>Tipo: {p.types.map((t) => t.type.name).join(", ")}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
