@@ -25,7 +25,6 @@ function App() {
   return (
     <div>
       <header className="app-header">
-        <img src={pokeball} alt="Pokébola" className="pokeball-icon" />
         <h1 className="app-title">Poke Gallery</h1>
       </header>
       <div className="pokemon-grid">
