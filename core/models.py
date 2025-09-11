@@ -6,3 +6,8 @@ class Author(models.Model):
 
     def __str__(self):
         return self.name
+
+class Book(models.Model):
+    title = models.CharField()
+    published_year = models.IntegerField()
+    author = models.ForeignKey(Author, on_delete=models.CASCADE)
