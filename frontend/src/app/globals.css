@@ -1,0 +1,96 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --color-background: #f9fafb;
+  --color-foreground: #111827;
+  --color-primary: #6366f1;
+  --color-accent: #f59e0b;
+  --font-sans: 'Arial', sans-serif;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+p {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+input {
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--color-primary);
+  border-radius: 0.5rem;
+  outline: none;
+  font-size: 1.1rem;
+  width: 100%;
+  max-width: 400px;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  border-color: var(--color-accent);
+}
+
+button {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: var(--color-accent);
+}
+
+a {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.tabs {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.tab {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.tab-active {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.tab-inactive {
+  background-color: #e5e7eb;
+  color: var(--color-foreground);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
