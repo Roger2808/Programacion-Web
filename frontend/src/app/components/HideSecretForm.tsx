@@ -17,7 +17,10 @@ export default function HideSecretForm() {
 
     try {
       const data = await createSecret(content);
-      setLink(data.secret_url);
+      console.log(data.link);
+      setError(data.link);
+      console.log(data.key);
+      setLink(data.link);
     } catch {
       setError("Error al crear el enlace. Intenta de nuevo.");
     } finally {

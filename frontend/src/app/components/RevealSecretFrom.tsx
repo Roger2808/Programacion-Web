@@ -15,7 +15,8 @@ export default function RevealSecretForm() {
     setMessage(null);
 
     try {
-      const res = await fetch(`http://localhost:8000/api/secrets/${key}/`);
+      const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000/api";
+      const res = await fetch(`${API_URL}/reveal/${key}/`);
       const data = await res.json();
 
       if (!res.ok) throw new Error(data.error || "Error");
